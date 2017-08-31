@@ -4,3 +4,20 @@
 disk_additional_disks: []
 disk_package_use: auto
 additional_fs_utils: []
+disk_additional_disks:
+ - disk: /dev/sdi
+   fstype: ext4
+   mount_options: rw,noatime,errors=remount-ro
+   mount: /disk8
+   user: root
+   group: root
+   disable_periodic_fsck: false
+   label: /disk8
+ - disk: /dev/sdj
+   fstype: ext4
+   mount_options: rw,noatime,errors=remount-ro
+   mount: /disk9
+   user: root
+   group: root
+   disable_periodic_fsck: false
+   label: /disk9
